@@ -27,8 +27,7 @@
             android:text="Menu Utama"
             android:gravity="left|center"
             android:textSize="25sp"
-            android:textStyle="bold"
-            android:textColor="@color/putih">
+            android:textStyle="bold">
         </TextView>
     </LinearLayout>
     <LinearLayout
@@ -88,7 +87,8 @@
                                         android:text="Motif Batik"
                                         android:gravity="center|top"
                                         android:textSize="16sp"
-                                        android:layout_weight="1"/>
+                                        android:layout_weight="1"
+                                        android:textColor="@color/hitam"/>
                                 </LinearLayout>
                                 <Button
                                     android:layout_width="match_parent"
@@ -135,7 +135,8 @@
                                         android:text="Cara Pembuatan batik"
                                         android:textSize="16sp"
                                         android:gravity="top|center"
-                                        android:layout_weight="1"/>
+                                        android:layout_weight="1"
+                                        android:textColor="@color/hitam"/>
                                 </LinearLayout>
                                 <Button
                                     android:layout_width="match_parent"
@@ -190,7 +191,8 @@
                                         android:text="Favorit Batik"
                                         android:textSize="16sp"
                                         android:gravity="top|center"
-                                        android:layout_weight="1"/>
+                                        android:layout_weight="1"
+                                        android:textColor="@color/hitam"/>
                                 </LinearLayout>
                                 <Button
                                     android:layout_width="match_parent"
@@ -236,7 +238,8 @@
                                         android:text="Tentang"
                                         android:textSize="16sp"
                                         android:gravity="top|center"
-                                        android:layout_weight="1"/>
+                                        android:layout_weight="1"
+                                        android:textColor="@color/hitam"/>
                                 </LinearLayout>
                                 <Button
                                     android:layout_width="match_parent"

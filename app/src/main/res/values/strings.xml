@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">aplikasi ebn</string>
+    <string name="cara">Di daerah-daerah sentra batik pasti tak sedikit turis asing mengunjungi workshop membatik untuk mengetahui secara langsung proses pembuatan batik tersebut, bahkan tak jarang dari mereka mencoba merasakan proses membatik. Dengan demikian, sebagai pemilik kita tidak boleh dilangkahi oleh pendatang. Maka dari itu, jangan segan untuk belajar memahami kebudayaan sendiri. dalam hal ini, mari kita mencoba mengenal bagaimana cara membuat batik. Berikut langkah-langkah untuk membuat batik:\n
+
+    \n1.Siapkan alat dan bahan untuk membatik seperti: kain mori sesuai kebutuhan yang telah diketel (proses menghilangkan kanji pada kain dengan cara diuleni dalam larutan minyak kacang) dan canting.
+    \n2.Gambar desain di atas kain mori sesuai dengan pola yang diinginkan. Dalam istilah perbatikan tahap ini sering disebut Nglengreng.
+    \n3.Panaskan lilin/malem diatas wajan hingga mencair sempurna. Suhu maksimal lilin/ malem sekitar 80 derajat Celcius. Jadi, harus berhati-hati saat menggunakannya.
+    \n4.Perhatikan posisi duduk saat membatik. Duduklah dengan posisi tungku/ kompor batik berada di sebelah kanan(kecuali kidal, tungku/ kompor ada di sebelah kiri) untuk memudahkan mengambil malem dan menggoreskannya ke atas kain mori.
+    \n5.Celupkan canting ke dalam wajan yang terisi oleh malem selama sekitar 3 detik sebagai pengesuaian suhu pada canting.
+    \n6.Mulailah menggoreskan canting ke atas kain yang telah dilengreng (dipola) dengan menggoreskannya dari kiri ke kanan sama halnya dengan menulis latin. Hal ini dimaksudkan agar mendapatkan goresan yang baik dan halus.
+    \n7.Isilah bagian pola yang kosong dengan ornamen-ornamen seperti garis-garis arsiran maupun titik-titik. Misalnya pada gambar daun mestinya memiliki tulang daun, maka daun tersebut akan diisi garis sesuai dengan kebutuhan. Tahap ini biasa disebut dengan istilah Isen-isen.
+    \n8.Tahap nembok artinya mengeblok bagian kain yang tidak ingin terkena warna. Namun, tahap ini dilakukan apabila dibutuhkan warna awalnya.
+    \n9.Tahap pencelupan warna. Biasanya menggunakan pewarna sintesis napthol dan indigosol. diperlukan beberapa kali celupan untuk memunculkan warnanya.
+    \n10.Tiriskan kain yang telah dicelup dan diamkan agar warnanya dapat meresap dengan maksimal pada serat kain.
+    \n11.Rebus kain dalam air mendidih 100 derajat Celcius untuk melirihkan lilin/ malem yang menempel pada kain untuk memunculkan motif yang telah didisain. tahap merebus ini disebut nglorod.
+    \n12.Cuci kain batik dengan air bersih untuk menghilangkan sisa-sisa lilin/ malem yang masih menempel. Kemudian, jemurlah dengan angin-angin dan hindari terkena panas sinar matahari langsung.</string>
+    <string name="deskripsi">Nama saya Richi Apriyanto, mahasiswa semester 8 Program Studi Informatika di Universitas Indraprasta PGRI. Aplikasi ini dibuat sebagai salah satu syarat untuk memenuhi Tugas Akhir dan memperoleh gelar Sarjana.</string>
 </resources>
