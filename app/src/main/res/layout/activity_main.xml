@@ -19,7 +19,7 @@
         android:gravity="center"
         android:text="ENSIKLOPEDIA BATIK NUSANTARA"
         android:textColor="@color/putih"
-        android:textSize="20sp"
+        android:textSize="30sp"
         android:textStyle="bold"/>
 
     <ProgressBar

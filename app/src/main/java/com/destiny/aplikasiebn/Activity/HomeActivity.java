@@ -13,7 +13,7 @@ import android.widget.ImageView;
 import com.destiny.aplikasiebn.R;
 
 public class HomeActivity extends AppCompatActivity {
-    Button batik,cara,favorit,tentang;
+    Button batik,cara,favorit,tentang,sejarah;
     ImageView exit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +41,7 @@ public class HomeActivity extends AppCompatActivity {
         cara.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this,CaraBatikActivity.class);
+                Intent intent = new Intent(HomeActivity.this,ListCaraBatikActivity.class);
                 startActivity(intent);
             }
         });
@@ -49,6 +49,13 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(HomeActivity.this,TentangActivity.class);
+                startActivity(intent);
+            }
+        });
+        sejarah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this,SejarahActivity.class);
                 startActivity(intent);
             }
         });
