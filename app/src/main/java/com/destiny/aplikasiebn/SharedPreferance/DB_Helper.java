@@ -16,9 +16,14 @@ public class DB_Helper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "batik.db";
     private static final int DATABASE_VERSION = 3;
     public static final String TABLE_NAME = "batik";
+    public static final String TABLE_NAME_CARA = "cara";
     public static final String COLUMN_GAMBAR = "gambar";
     public static final String COLUMN_NAMA = "nama";
     public static final String COLUMN_DESKRIPSI = "deskripsi";
+    public static final String COLUMN_CARA_NO = "no";
+    public static final String COLUMN_CARA_GAMBAR = "caragambar";
+    public static final String COLUMN_CARA_NAMA = "caranama";
+    public static final String COLUMN_CARA_DESKRIPSI = "caradeskripsi";
 
 
     public DB_Helper(Context context){super(
@@ -32,11 +37,18 @@ public class DB_Helper extends SQLiteOpenHelper {
                 COLUMN_NAMA+" TEXT NOT NULL,"+
                 COLUMN_DESKRIPSI+" TEXT NOT NULL);"
         );
+        db.execSQL("CREATE TABLE "+TABLE_NAME_CARA+" (" +
+                COLUMN_CARA_NO+" TEXT NOT NULL, "+
+                COLUMN_CARA_GAMBAR+" TEXT NOT NULL, "+
+                COLUMN_CARA_NAMA+" TEXT NOT NULL,"+
+                COLUMN_CARA_DESKRIPSI+" TEXT NOT NULL);"
+        );
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME_CARA);
         this.onCreate(db);
     }
     public List<Model> modelList() {
@@ -57,6 +69,35 @@ public class DB_Helper extends SQLiteOpenHelper {
         }
         return modelLinkedList;
     }
+    public List<Model> modelListCara() {
+        String query = "SELECT  * FROM " + TABLE_NAME_CARA;
+        List<Model> modelLinkedList = new LinkedList<>();
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(query, null);
+        Model model;
+
+        if (cursor.moveToFirst()) {
+            do {
+                model = new Model();
+                model.setNo(cursor.getString(cursor.getColumnIndex(COLUMN_CARA_NO)));
+                model.setCaragambar(cursor.getString(cursor.getColumnIndex(COLUMN_CARA_GAMBAR)));
+                model.setCaranama(cursor.getString(cursor.getColumnIndex(COLUMN_CARA_NAMA)));
+                model.setCaradeskripsi(cursor.getString(cursor.getColumnIndex(COLUMN_CARA_DESKRIPSI)));
+                modelLinkedList.add(model);
+            } while (cursor.moveToNext());
+        }
+        return modelLinkedList;
+    }
+    public void FavoriteCara(Model models){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_CARA_NO,models.getNo());
+        values.put(COLUMN_CARA_GAMBAR,models.getCaragambar());
+        values.put(COLUMN_CARA_NAMA,models.getCaranama());
+        values.put(COLUMN_CARA_DESKRIPSI,models.getCaradeskripsi());
+        db.insert(TABLE_NAME_CARA,null, values);
+        db.close();
+    }
     public void FavoriteBatik(Model models) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -70,7 +111,11 @@ public class DB_Helper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL("DELETE FROM "+TABLE_NAME+" WHERE nama ='"+nama+"'");
         Toast.makeText(context, "Delete Favorit Berhasil", Toast.LENGTH_SHORT).show();
-
+    }
+    public void deleteCaraRecord(String nama, Context context) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("DELETE FROM "+TABLE_NAME_CARA+" WHERE caranama ='"+nama+"'");
+        Toast.makeText(context, "Delete Favorit Berhasil", Toast.LENGTH_SHORT).show();
     }
     public Cursor checkBatik(String nama){
         SQLiteDatabase db = this.getWritableDatabase();
@@ -78,6 +123,13 @@ public class DB_Helper extends SQLiteOpenHelper {
         Cursor cursor = db.rawQuery(query,null);
         return cursor;
     }
+    public Cursor checkCara(String nama){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query ="SELECT * FROM "+TABLE_NAME_CARA+" WHERE caranama = '"+nama+"'";
+        Cursor cursor = db.rawQuery(query,null);
+        return cursor;
+    }
+
 }
 
 

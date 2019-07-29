@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Cara Pembuatan Batik"
+            android:text="Sejarah batik"
             android:gravity="left|center"
             android:id="@+id/tvCara"
             android:textSize="20sp"

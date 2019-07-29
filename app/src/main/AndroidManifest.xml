@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.SejarahActivity"></activity>
+        <activity android:name=".Activity.ListSukaCaraBatikActivity"></activity>
+        <activity android:name=".Activity.SukaActivity" />
+        <activity android:name=".Activity.SejarahActivity" />
         <activity android:name=".Activity.ListCaraBatikActivity" />
         <activity android:name=".Activity.TentangActivity" />
         <activity android:name=".Activity.FavoritActivity" />

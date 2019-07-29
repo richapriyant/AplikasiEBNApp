@@ -46,17 +46,18 @@ public class AdapterCara extends RecyclerView.Adapter<AdapterCara.CardViewViewHo
     @Override
     public void onBindViewHolder(@NonNull final CardViewViewHolder cardViewViewHolder, int i) {
         final Model p = getListBatik().get(i);
-        cardViewViewHolder.nama.setText(p.getNama());
+        cardViewViewHolder.nama.setText(p.getCaranama());
         Glide.with(context)
-                .load(p.getGambar())
+                .load(p.getCaragambar())
                 .into(cardViewViewHolder.gambar);
         cardViewViewHolder.list.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent goInput = new Intent(context, CaraBatikActivity.class);
-                goInput.putExtra("GAMBAR",p.getGambar());
-                goInput.putExtra("NAMA",p.getNama());
-                goInput.putExtra( "DESKRIPSI",p.getDeskripsi());
+                goInput.putExtra("NO",p.getNo());
+                goInput.putExtra("GAMBAR",p.getCaragambar());
+                goInput.putExtra("NAMA",p.getCaranama());
+                goInput.putExtra( "DESKRIPSI",p.getCaradeskripsi());
                 context.startActivities(new Intent[]{goInput});
             }
         });

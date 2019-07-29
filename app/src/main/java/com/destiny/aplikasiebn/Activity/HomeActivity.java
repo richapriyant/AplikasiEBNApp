@@ -23,6 +23,7 @@ public class HomeActivity extends AppCompatActivity {
         cara=(Button)findViewById(R.id.btnCara);
         favorit=(Button)findViewById(R.id.btnFavorite);
         tentang=(Button)findViewById(R.id.btnTentang);
+        sejarah=(Button)findViewById(R.id.btnSDB);
         exit=(ImageView)findViewById(R.id.ivExit);
         batik.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,7 +35,7 @@ public class HomeActivity extends AppCompatActivity {
         favorit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this,FavoritActivity.class);
+                Intent intent = new Intent(HomeActivity.this,SukaActivity.class);
                 startActivity(intent);
             }
         });
