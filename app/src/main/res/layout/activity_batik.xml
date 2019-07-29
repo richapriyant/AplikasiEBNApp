@@ -27,7 +27,7 @@
             android:gravity="center">
 
             <AutoCompleteTextView
-                android:id="@+id/etSearchLagu"
+                android:id="@+id/etSearch"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
