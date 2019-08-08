@@ -76,7 +76,7 @@ public class DetailActivity extends AppCompatActivity {
                     Favorit.setImageDrawable(DrawableFav);
                 }else{
                     Favorit.setImageDrawable(DrawableHapus);
-                    Toast.makeText(DetailActivity.this," Ditambahkan Ke Favorit",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DetailActivity.this," Ditambahkan Ke Disukai",Toast.LENGTH_SHORT).show();
                     Model model = new Model(GAMBAR,
                             NAMA,
                             DESKRIPSI);

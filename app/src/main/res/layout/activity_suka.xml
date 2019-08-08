@@ -107,7 +107,7 @@
                 android:id="@+id/ivKembali"/>
             <TextView
                 android:gravity="center|left"
-                android:textColor="@color/hitam"
+                android:textColor="@color/putih"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

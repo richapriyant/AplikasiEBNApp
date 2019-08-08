@@ -23,7 +23,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Sejarah batik"
-            android:gravity="left|center"
+            android:gravity="center"
             android:id="@+id/tvCara"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -70,7 +70,7 @@
                             android:id="@+id/tvDeskripsi"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:gravity="left"
+                            android:gravity="center"
                             android:textSize="20sp"
                             android:text="@string/sejarah"/>
                     </LinearLayout>
