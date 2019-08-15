@@ -39,12 +39,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:src="@drawable/batik" />
+                        android:src="@drawable/batik_nusantara" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="4"
-                        android:text="Batik Yang Disukai"
+                        android:text="Motif Favorit"
                         android:gravity="center|top"
                         android:textSize="25sp"
                         android:textStyle="bold"
@@ -78,12 +78,12 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:layout_gravity="center"
-                        android:src="@drawable/cara" />
+                        android:src="@drawable/alat" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="4"
-                        android:text="Cara Yang Disukai"
+                        android:text="Jenis Faort"
                         android:gravity="center|top"
                         android:textSize="25sp"
                         android:textStyle="bold"
@@ -111,7 +111,7 @@
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Disukai"
+                android:text="Favorit"
                 android:textSize="25sp"
                 android:textStyle="bold"/>
         </LinearLayout>

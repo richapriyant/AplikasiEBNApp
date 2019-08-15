@@ -110,12 +110,12 @@ public class DB_Helper extends SQLiteOpenHelper {
     public void deleteBatikRecord(String nama, Context context) {
         SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL("DELETE FROM "+TABLE_NAME+" WHERE nama ='"+nama+"'");
-        Toast.makeText(context, "Hapus Disukai Berhasil", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "Hapus Favorit Berhasil", Toast.LENGTH_SHORT).show();
     }
     public void deleteCaraRecord(String nama, Context context) {
         SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL("DELETE FROM "+TABLE_NAME_CARA+" WHERE caranama ='"+nama+"'");
-        Toast.makeText(context, "Hapus Disukai Berhasil", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "Hapus Favorit Berhasil", Toast.LENGTH_SHORT).show();
     }
     public Cursor checkBatik(String nama){
         SQLiteDatabase db = this.getWritableDatabase();
