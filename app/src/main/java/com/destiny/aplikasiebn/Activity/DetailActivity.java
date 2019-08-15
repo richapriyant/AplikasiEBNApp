@@ -45,7 +45,7 @@ public class DetailActivity extends AppCompatActivity {
         Glide.with(DetailActivity.this)
                 .load(GAMBAR)
                 .into(Gambar);
-        final Drawable DrawableHapus = getResources().getDrawable(R.drawable.unfavorite);
+        final Drawable DrawableHapus = getResources().getDrawable(R.drawable.binfav);
         final Drawable DrawableFav = getResources().getDrawable(R.drawable.favorit);
         Cursor cursors = dbHelper.checkBatik(NAMA);
         String ID2 = null;
@@ -76,7 +76,7 @@ public class DetailActivity extends AppCompatActivity {
                     Favorit.setImageDrawable(DrawableFav);
                 }else{
                     Favorit.setImageDrawable(DrawableHapus);
-                    Toast.makeText(DetailActivity.this," Ditambahkan Ke Disukai",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DetailActivity.this," Ditambahkan Ke Favorit",Toast.LENGTH_SHORT).show();
                     Model model = new Model(GAMBAR,
                             NAMA,
                             DESKRIPSI);

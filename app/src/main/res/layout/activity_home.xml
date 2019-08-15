@@ -85,9 +85,9 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:text="Sejarah dan Budaya"
-                                        android:gravity="center|top"
+                                        android:gravity="center"
                                         android:textSize="16sp"
-                                        android:layout_weight="1"
+                                        android:layout_weight="2"
                                         android:textColor="@color/hitam"/>
                                 </LinearLayout>
                                 <Button
@@ -128,14 +128,14 @@
                                         android:layout_weight="1"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:src="@drawable/cara"/>
+                                        android:src="@drawable/alat"/>
                                     <TextView
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:text="Cara Pembuatan Batik"
+                                        android:text="Jenis Batik"
                                         android:textSize="16sp"
-                                        android:gravity="top|center"
-                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:layout_weight="2"
                                         android:textColor="@color/hitam"/>
                                 </LinearLayout>
                                 <Button
@@ -184,14 +184,14 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_weight="1"
-                                        android:src="@drawable/cara"/>
+                                        android:src="@drawable/batik_nusantara"/>
                                     <TextView
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:text="Motif Batik"
                                         android:textSize="16sp"
-                                        android:gravity="top|center"
-                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:layout_weight="2"
                                         android:textColor="@color/hitam"/>
                                 </LinearLayout>
 
@@ -236,10 +236,10 @@
                                     <TextView
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:text="Disukai"
+                                        android:text="Favorit"
                                         android:textSize="16sp"
-                                        android:gravity="top|center"
-                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:layout_weight="2"
                                         android:textColor="@color/hitam"/>
                                 </LinearLayout>
                                 <Button
@@ -297,8 +297,8 @@
                                             android:layout_height="match_parent"
                                             android:text="Tentang"
                                             android:textSize="16sp"
-                                            android:gravity="top|center"
-                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:layout_weight="2"
                                             android:textColor="@color/hitam"/>
                                     </LinearLayout>
 

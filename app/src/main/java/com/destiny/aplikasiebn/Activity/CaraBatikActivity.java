@@ -80,7 +80,7 @@ public class CaraBatikActivity extends AppCompatActivity {
                     Favorit.setImageDrawable(DrawableFav);
                 }else{
                     Favorit.setImageDrawable(DrawableHapus);
-                    Toast.makeText(CaraBatikActivity.this," Ditambahkan Ke Disukai",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CaraBatikActivity.this," Ditambahkan Ke Favorit",Toast.LENGTH_SHORT).show();
                     Model model = new Model("1",
                             GAMBAR,
                             NAMA,
