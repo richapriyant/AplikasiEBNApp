@@ -23,7 +23,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Sejarah dan Budaya Batik"
-            android:gravity=""
+            android:gravity="left|center"
             android:id="@+id/tvCara"
             android:textSize="20sp"
             android:textStyle="bold"
