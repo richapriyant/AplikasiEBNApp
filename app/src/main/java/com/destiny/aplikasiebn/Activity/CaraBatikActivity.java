@@ -49,7 +49,7 @@ public class CaraBatikActivity extends AppCompatActivity {
                 CaraBatikActivity.super.onBackPressed();
             }
         });
-        final Drawable DrawableHapus = getResources().getDrawable(R.drawable.unfavorite);
+        final Drawable DrawableHapus = getResources().getDrawable(R.drawable.binfav);
         final Drawable DrawableFav = getResources().getDrawable(R.drawable.favorit);
         Cursor cursors = dbHelper.checkCara(NAMA);
         String ID2 = null;
